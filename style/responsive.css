@@ -1,0 +1,63 @@
+.container {
+    max-width: 1400px;
+    margin: 0px auto;
+    min-width: 375px;
+}
+
+
+@media screen and (min-width : 578px){
+    .container .top > div {
+        width: 400px;
+        height: 220px;
+    }
+    .container .top .card2 #input_card_number {
+        font-size: 22px;
+    }
+    .container .top .card p {
+        top: 100px;
+        font-size: 14px;
+        right: 40px;
+    }
+}
+
+
+@media screen and (min-width : 768px){
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+
+    
+    .container .top {
+        height: 100%;
+        background-image: url(../img/bg-main-desktop.png);
+        width: 30%;
+    }   
+
+    .container .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 70%;
+    }
+    
+
+
+    .container .top .card {
+        left: 40%;
+        top: 50%;
+    }
+
+    .container .top .card2 {
+        top: 30%;
+        left: 20%;
+    }
+
+    .container .bottom .content {
+        z-index: 2;
+        background-color: transparent;
+    }
+    
+}

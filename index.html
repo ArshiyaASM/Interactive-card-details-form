@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive card details form</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="icon" href="./img/favicon-32x32.png">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="card">
+                <p id="input_cvc">000</p>
+            </div>
+
+
+            <div class="card2">
+                <div>
+                    <img src="./img/card-logo.svg" alt="">
+                </div>
+                <div>
+                    <p id="input_card_number">0000 0000 0000 0000</p>
+                </div>
+                <div>
+                    <p id="input_holder">JANE APPLESEED</p>
+                    <p><span id="YY">00</span>/<span id="mm">00</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom">
+            <div class="content">
+                <form action="">
+                    <div class="section">
+                        <label for="holder">CARDHOLDER NAME</label>
+                        <input type="text" id="holder" class="input_style" autocomplete="off" name="holder_name" placeholder="e.g. Jane Appleseed">
+                        <label for="card_number">CARD NUMBER</label>
+                        <input type="text" id="card_number" class="input_style" autocomplete="off" name="card_number" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+                        <p class="error">Wrong format, number only</p>
+                    </div>
+                    <div class="section">
+                        <div class="Date">
+                            <label for="month">EXP. DATE(MM/YY)</label>
+                            <input type="number" class="input_style" id="month"  placeholder="MM" name="M">
+                            <input type="number" class="input_style" id="year" placeholder="YY" name="Y">
+                            <p class="error">can't be blank</p>
+                        </div>
+                        <div class="cvc">
+                            <label for="number">CVC</label>
+                            <input type="number" class="input_style" id="cvc" min="0" placeholder="e.g. 123" name="cvc"> 
+                            <p class="error">can't be blank</p>
+                        </div>
+                    </div>
+                    <button id="confirm_btn">Confirm</button>
+                </form>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    padding: unset;
+    margin: unset;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+}
+
+
+.container .top {
+    height: 400px;
+    background-image: url(../img/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container .bottom {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .bottom .content {
+    background-color: white;
+    width: 90%;
+}
+
+.container .bottom .content form label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.container .bottom .content form .section:nth-child(1) > input{
+    display: block;
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+}
+
+.container .bottom .content form .section:nth-child(2){
+    display: flex;
+}
+
+.container .bottom .content form .section:nth-child(2) > div {
+    width: 50%;
+}
+
+.container .bottom .content form .section:nth-child(2) > div:nth-child(1) label {
+    display: block;
+}
+
+.error {
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.error:nth-child(5){
+    margin: 20px 0px;
+}
+
+.input_style {
+    padding: 15px 15px;
+    border-radius: 7px;
+    border: 1px solid hsl(270, 3%, 87%);
+    outline: none;
+}
+
+.container .bottom .content {
+    max-width: 400px;
+}
+
+.container .bottom .content form .section:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.container .bottom .content form .section:nth-child(2) > div:nth-child(1) input{
+    width: 45%;
+    margin-top: 10px;
+}
+
+.container .bottom .content form .section:nth-child(2) > div:nth-child(2) label {
+    display: block;
+}
+
+.container .bottom .content form .section:nth-child(2) > div:nth-child(2) {
+}
+
+.container .bottom .content form .section:nth-child(2) > div:nth-child(2) input {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container .bottom .content form button {
+    width: 100%;
+    border: none;
+    color: #fff;
+    background-color: hsl(278, 68%, 11%);
+    padding: 15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.confirm_state {
+    text-align: center;
+}
+
+
+.btn {
+    width: 100%;
+    border: none;
+    color: #fff;
+    background-color: hsl(278, 68%, 11%);
+    padding: 15px 0px;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+
+
+.container .top > div {
+    position: absolute;
+    height: 200px;
+    width: 320px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+
+.container .top .card {
+    right: 20px;
+    top: 130px;
+    background-image: url(../img/bg-card-back.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container .top .card p {
+    position: absolute;
+    top: 90px;
+    font-size: 14px;
+    right: 30px;
+}
+
+.container .top .card2 {
+    top: 250px;
+    left: 20px;
+    background-image: url(../img/bg-card-front.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+.container .top .card2 #input_card_number {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 6px;
+}
+
+.container .top .card2 div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 14px;
+}
