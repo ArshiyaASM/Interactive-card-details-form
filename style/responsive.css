@@ -22,6 +22,21 @@
 
 
 @media screen and (min-width : 768px){
+    .container .top .card {
+        right: 20%;
+        top: 25%;
+    }
+
+    .container .top .card2 {
+        top: 60%;
+        left: 15%;
+    }
+}
+
+
+
+
+@media screen and (min-width : 992px){
     .container {
         display: flex;
         height: 100vh;
